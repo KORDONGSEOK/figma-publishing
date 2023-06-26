@@ -1,0 +1,20 @@
+/* Import Local CSS */
+@import url('/css/reset.css');
+@import url('/css/variables.css');
+
+body {
+    margin: 0;
+    font-family: var(--notosans);
+    color: var(--dark-black);
+}
+.test1 {
+    font-family: var(--nexon2);
+}
+.test2 {
+    font-family: var(--roboto);
+}
+.test3 {
+    font-family: var(--bree);
+    font-size: 3em;
+    color: var(--crimson);
+}
