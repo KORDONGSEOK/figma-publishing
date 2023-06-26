@@ -2,19 +2,62 @@
 @import url('/css/reset.css');
 @import url('/css/variables.css');
 
+* {
+    font-family: var(--primary-kr);
+    font-weight: 300;
+}
 body {
-    margin: 0;
-    font-family: var(--notosans);
-    color: var(--dark-black);
+  margin: 0;  
+  color: var(--dark-black);
+  line-height: 1.5em;
+  font-style: 14px;
 }
-.test1 {
-    font-family: var(--nexon2);
+
+/* #### Common CSS #### */
+
+/* Layout CSS */
+.container {
+    border: 1px solid #000;
+    width: 375px; /*작업완료후 100%*/
+    /* position: relative; */
 }
-.test2 {
-    font-family: var(--roboto);
+
+/* Logo CSS */
+.logo {
+    font-family: var(--logo-en);
 }
-.test3 {
-    font-family: var(--bree);
-    font-size: 3em;
+
+/* #### Preloading html #### */
+.preloading {
+    height: 750px; /*작업완료후 100vh*/
+}
+.preloading-inner {
+    height: inherit;
+    background: url('/images/preloading-back.jpg') no-repeat center left -130px;
+    background-size: cover;
+    position: relative;
+}
+.heading-preloading {
+     position: absolute;
+     top: 75px;
+     left: 30px;
+     /* border: 1px solid #000; */
+
+}
+.heading-preloading .logo {
+    font-size: 32px;
     color: var(--crimson);
+    white-space: nowrap;
 }
+.slogan {}
+.slogan span {
+    display: block;
+    font-family: var(--secondary-kr);
+    font-size: 28px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+
+/* #### Signin html #### */
+
