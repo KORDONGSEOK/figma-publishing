@@ -649,3 +649,51 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
 .company-info-more span {
     display: block;
 }
+
+/* #### Categroy html #### */
+.category {}
+.category-inner {}
+.categroy-content {
+    padding: 0;
+}
+.category-accordion {
+    font-size: 16px;
+}
+.category-accordion .title {
+    border-bottom: 1px solid var(--gloudy-gray);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--crimson);
+    font-weight: 400;
+    position: relative;
+    padding: 0 20px;
+}
+.category-accordion .title:after{
+    content: '\F282';
+    font-family: bootstrap-icons;
+    background-color: var(--fuschia);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    right: 20px;
+    transition: 0.35s;
+}
+.category-accordion .title.active:after {
+    background-color: transparent;
+    transform: rotateX(180deg);
+}
+.category-accordion .detail {
+    display: none;
+    line-height: 2em;
+    padding: 7px 0;
+    background-color: var(--snow);
+    padding: 0 20px;
+}
+.category-accordion .detail a {
+    display: block;
+    padding: 2px 0;
+}

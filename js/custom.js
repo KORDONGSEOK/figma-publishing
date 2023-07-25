@@ -3,6 +3,23 @@ $(function() {
   $('.gnb-include').load('/include/gnb.html');
   $('.main-header-include').load('/include/main-header.html')
 
+  /* Category Accordion */
+  $('.category-accordion .detail').eq(0).show()
+  $('.category-accordion .title').click(function(){
+    // 누르는 것 모두 펼치기
+    // $(this).next().show()
+    // $(this).next().stop().slideDown()
+    // $(this).next().stop().fadeIn()
+    // 누르는 것 모두 펼치기 & 펼쳐진 것 누르면 접히기
+    // $(this).next().stop().slideToggle()
+
+    // 누르는 것만 펼쳐지고 기존에 펼쳐진 것은 접히게
+    $(this).next().stop().slideDown()
+    $(this).siblings('.category-accordion .title').next().stop().slideUp()
+
+    $(this).addClass('active')
+    $(this).siblings('.category-accordion .title').removeClass('active')
+  });
 
   /* Front Slider */
   $('.fornt-slider').slick({
@@ -31,5 +48,7 @@ $(function() {
     // $('.company-info-more').show()
     $('.company-info-more').toggle()
   });
+
+
 
 })

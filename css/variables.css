@@ -40,5 +40,8 @@
   --royalblue: #346AFF;
   --turquoise: #72E7E1;
   --snow: #F5F5F5;
-  --gainsboro: #DCDCDC;
+  --gainsboro: #DCDCDC; /*추가된 색생*/
+  --light-beige: #F2E8D5;/*추가된 색상*/
+  --fuschia: #FCDDEC; /*추가된 색상*/
+
  }
