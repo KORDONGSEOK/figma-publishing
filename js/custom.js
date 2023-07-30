@@ -21,6 +21,17 @@ $(function() {
     $(this).siblings('.category-accordion .title').removeClass('active')
   });
 
+  /* Recent Search Result */
+  $('.search-recent .btn-clear').click(function(){
+    $(this).parent().hide()
+    // $(this).parent().slideUp(150)
+    // $(this).parent().fadeOut(150)
+  });
+
+  $('.search-recent .btn-all-clear').click(function(){
+    $('.search-recent .item').hide()
+  });
+
   /* Front Slider */
   $('.fornt-slider').slick({
     slidesToShow: 1, /*화면에 출력할 슬라이드 수 */
