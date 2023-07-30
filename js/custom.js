@@ -32,6 +32,15 @@ $(function() {
     $('.search-recent .item').hide()
   });
 
+  /* Cart Items */
+  $('.cart-content .btn-all-clear').click(function(){
+    $('.cart-item').hide()
+  });
+
+  $('.cart-content .btn-clear').click(function(){
+    $(this).parent().parent().hide()
+  });
+
   /* Front Slider */
   $('.fornt-slider').slick({
     slidesToShow: 1, /*화면에 출력할 슬라이드 수 */
