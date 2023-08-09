@@ -2,6 +2,7 @@ $(function() {
   /* Include html Files */
   $('.gnb-include').load('/include/gnb.html');
   $('.main-header-include').load('/include/main-header.html')
+  $('.goods-detail-header-include').load('/include/goods-detail-header.html')
 
   /* Category Accordion */
   $('.category-accordion .detail').eq(0).show()
@@ -69,6 +70,12 @@ $(function() {
     $('.company-info-more').toggle()
   });
 
-
+  /* Goods Detail Slider */
+  $('.goods-detail-slider').slick({
+    slidesToShow: 1, /*화면에 출력할 슬라이드 수 */
+    dots: true, /*하단의 도트 네이게이션 출력 */
+    arrows: false, /*좌우 화살표 네비게이션 출력 */
+    slidesToScroll: 1 /*드래그시 몇개 슬라이드*/
+  })
 
 })
