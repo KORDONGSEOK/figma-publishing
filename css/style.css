@@ -18,8 +18,14 @@ body {
 /* Layout CSS */
 .container {
     /* border: 1px solid #000; */
-    width: 375px; /*작업완료후 100%*/
+    /* width: 375px; 작업완료후 100% */
+    width: 100%; /*작업완료후 100%*/
     position: relative;
+}
+.preloading,
+.signin,
+.signup {
+    height: 100vh;
 }
 
 /* Logo CSS */
@@ -46,7 +52,10 @@ body {
     justify-content: space-between;
     /* position: absolute; */
     /* bottom: 0; */
-    width: 375px; /*작업완료후 100%*/
+    /* width: 375px; 작업완료후 100% */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #fff;
     /* align-items: center; */
 }
@@ -100,6 +109,8 @@ body {
 .cart-alarm b {
     /* border: 1px solid #000; */
     position: relative;
+    width: 30px;
+    margin: auto;
 }
 .user-alarm span em,
 .cart-alarm b em {
@@ -117,7 +128,7 @@ body {
 .cart-alarm b em {
     color: #fff;
     top: 0;
-    right: 22px;
+    right: -3px;
 }
 .user-alarm span em:before,
 .cart-alarm b em:before {
@@ -155,6 +166,7 @@ body {
 
 [class*=content] {
     padding: 20px;
+    margin-bottom: 65px;
 }
 
 /* Badgte CSS*/
@@ -175,14 +187,17 @@ body {
     background-color: var(--crimson);
 }
 
-
-
+/* GNB Navigation Check */
+.categroy .gnb a:nth-child(1),
+.search .gnb a:nth-child(2),
+.front .gnb a:nth-child(3),
+.mypage .gnb a:nth-child(4),
+.cart .gnb a:nth-child(5) {
+    color: var(--crimson);
+}
 
 
 /* #### Preloading html #### */
-.preloading {
-    height: 750px; /*작업완료후 100vh*/
-}
 .preloading-inner {
     height: inherit;
     background: url('/images/preloading-back.jpg') no-repeat center left -130px;
@@ -424,7 +439,8 @@ body {
 
 /* Front Slider */
 .fornt-slider {
-    height: 275px;
+    /* height: 275px; */
+    /* height: auto; */
 }
 .fornt-slider a img {
     width: 100%;
