@@ -486,13 +486,13 @@ body {
 }
 
 .goods-suggestion-items {
+    width: calc(var(--slide-basis) * 1.15);
     margin-bottom: 15px;
-    width: 430px;
 }
 .goods-suggestion-item {}
 .goods-suggestion-item .thum {
-    width: 135px;
-    height: 180px;
+    width: calc(var(--slide-basis) * 0.36);
+    height: calc(var(--slide-basis) * 0.48);
 }
 .goods-suggestion-item .thum img {
     width: inherit;
@@ -503,6 +503,22 @@ body {
 .goods-suggestion-item .desc {
     width: 135px;
 }
+/* Responsive Suggestion Item */
+/* @media (min-width: 400px) {
+    .goods-suggestion-items {
+        border: 3px solid blue;
+        width: 500px;
+    }
+    .goods-suggestion-item .thum {
+        width: 155px;
+        height: 200px;
+    }
+    .goods-suggestion-item .desc {
+        width: 155px;
+    }
+} */
+
+
 .goods-badge {}
 .goods-title {}
 .goods-title h3 {
@@ -1159,4 +1175,16 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
 .cart-notice li:before {
     content: '-';
     margin-right: 5px;
+}
+
+/* For Big Size Mobile & Tablet Device */
+@media(min-width: 400px) {
+    :root {
+        --slide-basis: 420px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        --slide-basis: 800px;
+    }
 }
