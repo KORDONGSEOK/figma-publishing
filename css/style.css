@@ -916,7 +916,8 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
     padding: 20px;
     position: fixed;
     bottom: 0;
-    width: 375px;
+    width: 100%;
+    z-index: 1000;
 }
 .goods-order-choice {
     display: flex;
@@ -952,13 +953,15 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
     background-color: transparent;
     border: none;
     width: 100%;
+    /* border: 1px solid #000; */
     position: absolute;
     top: -20px;
+    left: 0;
 }
 .overlay-fold {
-    display: none;
+    /* display: none; */
     position: fixed;
-    width: 375px;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
