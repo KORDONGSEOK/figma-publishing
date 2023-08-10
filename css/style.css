@@ -130,14 +130,18 @@ body {
     top: 0;
     right: -3px;
 }
+.cart-alarm span {
+    display: inline-block;
+    transform: translateY(-6px);
+}
 .user-alarm span em:before,
 .cart-alarm b em:before {
     content: attr(data-count);
     font-style: normal;
     font-size: 10px;
     font-family: var(--primary-en);
-    /* position: absolute;
-    top : 50%;
+    /* position: absolute; */
+    /* top : 50%;
     left : 50%;
     transform: translate(-50%, -50%); */
 }
@@ -1492,7 +1496,88 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
     margin-right: 5px;
 }
 
-
+/* GoodsUp Html */
+.goodsup {}
+.goodsup-inner {}
+.goodsup-content {
+    padding: 20px;
+}
+.goodsup-field {
+    margin-bottom: 10px;
+}
+.goodsup-field span {
+    display: block;
+}
+.goodsup-field span em {
+    color: var(--crimson);
+}
+.goodsup-field.goods-name input,
+.goodsup-field.price input,
+.goodsup-field.ratio input,
+.goodsup-field.count input
+ {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--gainsboro);
+    padding: 8px 0;
+}
+.goodsup-field.goods-name input::placeholder {
+    color: var(--sivler-gray);
+}
+.catergory-choice span {
+    margin-bottom: 10px;
+}
+.catergory-choice div {
+    border-bottom: 1px solid var(--gainsboro);
+    height: 50px;
+    text-align: left;
+}
+.catergory-choice div label {
+    display: inline-block;
+    transform: translateY(10px);
+    margin-right: 10px;
+}
+.catergory-choice {
+    /* display: flex;
+    gap: 10px; */
+}
+.catergory-choice span {
+    /* align-items: center;
+    text-align: center;
+    transform: translateY(5px); */
+}
+.catergory-choice div > * {
+    /* width: 100%;
+    border: 1px solid var(--gainsboro);
+    border-radius: 3px;
+    text-align: center;
+    padding: 7px; */
+}
+.goodsup-field.price-ratio .price {
+    padding: 5px;
+}
+.goodsup-field.price-ratio {
+    display: flex;
+    justify-content: space-between;
+}
+.goodsup-field.delivery-info {}
+.goodsup-field.delivery-info textarea {
+    width: 100%;
+    border-color: var(--gainsboro);
+    resize: none;
+}
+.goodsup-field.board-info {
+    margin-bottom: 30px;
+}
+.goodsup-field.board-info textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--gainsboro);
+    resize: none;
+}
+.btn-goodsup {
+    background-color: var(--crimson);
+}
 
 
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goodsup - Today's Meal Kit</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+      <!-- Slick Slider CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/custom.js"></script>
+</head>
+<body>
+  <div class="container goodsup">
+    <div class="goodsup-inner">
+      <!-- Main Header Include -->
+      <div class="main-header-include"></div>
+      <!-- Main Header Include -->
+      <div class="goodsup-content">     
+        <div class="goodsup-field goods-name">
+          <span>상품명<em>*</em></span>
+          <input type="text" placeholder="상품명 입력">
+        </div>
+        <div class="goodsup-field catergory-choice">
+          <span>카테고리<em>*</em></span>
+          <div>
+            <label>
+              <input type="radio" name="catergory" checked>한식/중식
+            </label>
+            <label>
+              <input type="radio" name="catergory">중식/일식
+            </label>
+            <label>
+              <input type="radio" name="catergory">동남아
+            </label>
+            <label>
+              <input type="radio" name="catergory">샐러드
+            </label>
+            <label>
+              <input type="radio" name="catergory">프리미엄밀키드
+            </label>
+          </div>
+        </div>
+        <div class="goodsup-field price">
+            <span>가격(￦)<em>*</em></span>
+            <input type="text" placeholder="가격입력">
+        </div>    
+        <div class="goodsup-field ratio">
+            <span>할인율(%)</span>
+            <input type="text" placeholder="할인율입력">
+        </div>
+        <div class="goodsup-field count">
+          <span>수량(개)<em>*</em></span>
+          <input type="text" placeholder="수량입력">
+        </div>
+        <div class="goodsup-field delivery-info">
+          <span>배송정보<em>*</em></span>
+          <textarea name="" id="" cols="30" rows="3" placeholder="배송정보 입력"></textarea>
+        </div>
+        <div class="goodsup-field board-info">
+          <span>상품정보<em>*</em></span>
+          <textarea name="" id="" cols="30" rows="6" placeholder="게시글 내용을 작성해주세요"></textarea>
+      </div>
+        <button class="btn-primary btn-goodsup">등록하기</button>
+      </div>
+      <!-- GNB include-->
+      <div class="gnb-include"></div>
+      <!-- GNB include-->
+    </div>
+  </div>
+</body>
+</html>
