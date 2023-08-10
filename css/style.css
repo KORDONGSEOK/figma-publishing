@@ -1502,6 +1502,82 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
 .goodsup-content {
     padding: 20px;
 }
+.img-choice {
+    /* border: 1px solid #000; */
+    display: flex;
+    margin-bottom: 40px;
+    
+}
+.img-upload input[type=file] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.img-upload {
+    /* border: 1px solid var(--gloudy-gray); */
+    display: block;
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
+}
+.img-upload .bi-camera {
+    display: inline-block;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    transform: translateY(5px);
+}
+.img-upload span {
+    display: block;
+    font-size: 11px;
+    columns: var(--gainsboro);
+    transform: translateY(-6px);
+}
+.img-list-all {
+    display: flex;
+}
+.img-list {
+    /* border: 1px solid blue; */
+    margin-right: 10px;
+}
+.img-choice .img-list .thum {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: auto;
+}
+.img-choice .img-list .thum img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+.img-list .thum .bi-x-circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    color: var(--sivler-gray);
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .goodsup-field {
     margin-bottom: 10px;
 }
@@ -1529,13 +1605,12 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
 }
 .catergory-choice div {
     border-bottom: 1px solid var(--gainsboro);
-    height: 50px;
     text-align: left;
 }
 .catergory-choice div label {
     display: inline-block;
-    transform: translateY(10px);
-    margin-right: 10px;
+    /* transform: translateY(10px); */
+    margin: 0 10px 10px 10px;
 }
 .catergory-choice {
     /* display: flex;

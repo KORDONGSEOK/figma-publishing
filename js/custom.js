@@ -58,6 +58,11 @@ $(function() {
     }
   });
 
+  /* Goods img-list */
+  $('.img-list .thum .bi-x-circle').click(function(){
+    $(this).parent().parent().remove();
+  });
+
   /* Cart Check All */
   $('.cart-chk-all').click(function(){
     $('.cart-chk').prop('checked', this.checked)
