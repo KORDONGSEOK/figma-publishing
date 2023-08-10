@@ -1285,20 +1285,49 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
 .cart-content {
     padding: 0;
 }
-.cart-items-header {
+/* .cart-items-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     padding-bottom: 0;
+} */
+.cart-items-header {
+    padding: 20px 20px 0 ;
+    
 }
 .cart-items-header h3 {
     margin: 0;
     font-size: 16px;
+    margin-bottom: 10px;
+}
+.cart-items-check-all {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gloudy-gray);
+    padding-bottom: 10px;
+}
+.cart-items-check-all .cart-chk-all {
+    width: 18px;
+    height: 18px;
+    transform: translateY(4px);
+    margin-right: 5px;
+    accent-color: var(--crimson);
+}
+.cart-items-check-all em {
+    font-style: normal;
+    color: var(--crimson);
+}
+
+/* Cart Item Empty */
+.cart-item-empty {
+    text-align: center;
+    padding: 50px 0;
+    display: none;
 }
 
 .cart-items {
-    
+    padding: 20px;
 }
 .cart-item {
     padding: 20px;

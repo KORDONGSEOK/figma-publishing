@@ -34,9 +34,35 @@ $(function() {
   });
 
   /* Cart Items */
-  $('.cart-content .btn-all-clear').click(function(){
-    $('.cart-item').hide()
+  // $('.cart-content .btn-all-clear').click(function(){
+  //   $('.cart-item').hide()
+  // });
+
+  /* Cart Item Empty */
+  $('.cart-content .btn-clear').click(function(){
+    $(this).parent().parent().remove();
+    if($('.cart-item').length == 0){
+      $('.cart-item-empty').show();
+      $('.cart-items-check-all').hide();
+      $('.cart-items-summary').hide();
+      $('.btn-primary.btn-order').hide();
+    }
   });
+  $('.cart-content .btn-all-clear').click(function(){
+    $('.cart-item').remove();
+    if($('.cart-item').length == 0){
+      $('.cart-item-empty').show();
+      $('.cart-items-check-all').hide();
+      $('.cart-items-summary').hide();
+      $('.btn-primary.btn-order').hide();
+    }
+  });
+
+  /* Cart Check All */
+  $('.cart-chk-all').click(function(){
+    $('.cart-chk').prop('checked', this.checked)
+  });
+
 
   $('.cart-content .btn-clear').click(function(){
     $(this).parent().parent().hide()
