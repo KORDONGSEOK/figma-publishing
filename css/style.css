@@ -1654,6 +1654,14 @@ input[id=food-type-tab6]:checked ~ .food-type-tabs .tab6 {
     background-color: var(--crimson);
 }
 
+/* Goods List html */
+
+.goods-list {}
+.goods-list-inner {}
+.goods-list-content {
+    padding: 0;
+    overflow-x: hidden;
+}
 
 
 /* For Big Size Mobile & Tablet Device */
